@@ -1,2 +1,2 @@
 # maintenance-mode
-PS1 Fake Maintenance Mode creating a reverse powershell for REDTEAM Project
+PS1 Fake Maintenance Mode creating a reverse powercheh for REDTEAM Project
